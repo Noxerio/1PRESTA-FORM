@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="cs">
+<meta charset="UTF-8">
+<title>Poptávkový dotazník | 1Presta</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<body class="bg-gray-100">
+
+    <!-- Záhlaví -->
+    <header class="bg-white w-full mb-10 sm:mb-20 shadow-xl">
+        <div class="container mx-auto px-5">
+            <div class="flex items-center justify-between py-4">
+                <img src="assets/img/logo.webp" class="w-32">
+                <button class="px-8 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600 transition-all">
+                    Ukončit                    
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- End - Záhlaví -->
+
+    <main>
+        <!-- Prolog -->
+        <section class="text-center">
+            <div class="container mx-auto px-5">
+                <p class="text-2xl text-teal-500">Začínáme</p>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">Vyberte jednu z možností</h2>
+                <legend class="max-w-prose mx-auto opacity-60 text-xs sm:text-sm">Jedná se o první krok, který slouží k tomu, abychom lépe pochopily čemu se budeme přesně věnovat. V případě, že si myslíte, že bude podstatných více bodů tak vyberte pouze prioritní, jelikož na konci formuláře budete moci přidat další scénář.</legend>
+            </div>
+        </section>
+        <!-- End - Prolog -->
+
+        <!-- First select -->
+        <section class="my-10">
+            <div class="container mx-auto px-5">
+                <div class="flex flex-col items-center gap-3">
+                    
+                    <label for="first"
+                        class="
+                            has-[:checked]:ring-2
+                            hover:cursor-pointer hover:scale-105
+                            ring-teal-500 flex gap-4 px-8 py-4 bg-white rounded-xl shadow-xl items-center transition-all w-full sm:w-[430px]
+                        ">
+                            <span class="material-symbols-outlined text-yellow-400">
+                                grade
+                            </span>
+                            <p class="font-medium">Již mám eshop na platformě Prestashop</p>
+                        <input name="group" type="radio" id="first" class="hidden" />
+                    </label>
+                    <label for="second"
+                        class="
+                            has-[:checked]:ring-2
+                            hover:cursor-pointer hover:scale-105
+                            ring-teal-500 flex gap-4 px-8 py-4 bg-white rounded-xl shadow-xl items-center transition-all w-full sm:w-[430px]
+                        ">
+                            <span class="material-symbols-outlined text-red-400">
+                                add_business
+                            </span>
+                            <p class="font-medium ">Ještě nemám eshop a chci zřídit nový</p>
+                        <input name="group" type="radio" id="second" class="hidden" />
+                    </label>
+                    <label for="third"
+                        class="
+                            has-[:checked]:ring-2
+                            hover:cursor-pointer hover:scale-105
+                            ring-teal-500 flex gap-4 px-8 py-4 bg-white rounded-xl shadow-xl items-center transition-all w-full sm:w-[430px]
+                        ">
+                            <span class="material-symbols-outlined text-green-400">
+                                swap_calls
+                            </span>
+                            <p class="font-medium">Mám eshop na jiné platformě</p>
+                        <input name="group" type="radio" class="hidden" id="third" />
+                    </label>
+    
+                </div>
+            </div>
+        </section>
+        <!-- End - First select -->
+
+        <!-- Second select -->
+        <section class="my-10">
+            <div class="container mx-auto px-5">
+                <div class="flex flex-wrap items-center justify-center gap-4 w-full">
+                    <label for="second1"
+                            class="
+                                has-[:checked]:ring-2
+                                hover:cursor-pointer hover:scale-105
+                                sm:basis-96 w-full relative bg-white rounded-xl p-5 flex gap-4 min-h-28 items-center shadow-xl transition-all ring-teal-500
+                            ">
+                        <div class="px-4 py-1 rounded-xl bg-green-400 absolute -top-3"> 
+                            <p class="text-white text-xs">Doporučujeme</p>
+                        </div>
+                        <img
+                            class="w-16 h-16" 
+                            src="https://prestashop.valasinec.cz/818-large_default/comgate-platebni-brana-modul-prestashop-17.jpg">
+                        <div class="flex flex-col justify-center">
+                            <h3 class="font-medium mb-2">Platební brána Comgate</h3>
+                            <p class="text-xs">Modul pro PrestaShop pro napojení na platební bránu ComGate. </p>
+                        </div>
+                        <div class="p-1 w-5 h-5 flex items-center justify-center z-20 rounded-full bg-slate-900 hover:bg-slate-700 absolute -top-3 right-5"> 
+                            <p class="text-white text-xs">?</p>
+                        </div>
+                        <input name="group1" type="radio" id="second1" class="hidden" />
+                    </label>
+                    
+                    <label for="second2"
+                            class="
+                                has-[:checked]:ring-2
+                                hover:cursor-pointer hover:scale-105
+                                sm:basis-96 w-full relative bg-white rounded-xl p-5 flex gap-4 min-h-28 items-center shadow-xl transition-all ring-teal-500
+                            ">
+                        <img
+                            class="w-16 h-16" 
+                            src="https://prestashop.valasinec.cz/818-large_default/comgate-platebni-brana-modul-prestashop-17.jpg">
+                        <div class="flex flex-col justify-center">
+                            <h3 class="font-medium mb-2">Platební brána Comgate</h3>
+                            <p class="text-xs">Modul pro PrestaShop pro napojení na platební bránu ComGate. </p>
+                        </div>
+                        <input name="group1" type="radio" id="second2" class="hidden" />
+                    </label>
+        
+                    <label for="second3"
+                            class="
+                                has-[:checked]:ring-2
+                                hover:cursor-pointer hover:scale-105
+                                sm:basis-96 w-full relative bg-white rounded-xl p-5 flex gap-4 min-h-28 items-center shadow-xl transition-all ring-teal-500
+                            ">
+                        <img
+                            class="w-16 h-16" 
+                            src="https://prestashop.valasinec.cz/818-large_default/comgate-platebni-brana-modul-prestashop-17.jpg">
+                        <div class="flex flex-col justify-center">
+                            <h3 class="font-medium mb-2">Platební brána Comgate</h3>
+                            <p class="text-xs">Modul pro PrestaShop pro napojení na platební bránu ComGate. </p>
+                        </div>
+                        <input name="group1" type="radio" id="second3" class="hidden" />
+                    </label>
+        
+                    <label for="second4"
+                            class="
+                                has-[:checked]:ring-2
+                                hover:cursor-pointer hover:scale-105
+                                sm:basis-96 w-full relative bg-white rounded-xl p-5 flex gap-4 min-h-28 items-center shadow-xl transition-all ring-teal-500
+                            ">
+                        <img
+                            class="w-16 h-16" 
+                            src="https://prestashop.valasinec.cz/818-large_default/comgate-platebni-brana-modul-prestashop-17.jpg">
+                        <div class="flex flex-col justify-center">
+                            <h3 class="font-medium mb-2">Platební brána Comgate</h3>
+                        </div>
+                        <input name="group1" type="radio" id="second4" class="hidden" />
+                    </label>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <img src="/assets/img/person.png" class="w-72">
+        <!-- End - Second select -->
+
+        <!-- Poznámka -->
+        <section>
+            <div class="w-full flex flex-col items-center px-5">
+                <textarea class="w-full sm:w-96 py-2 px-5 rounded-xl border-2 " placeholder="Poznámka"></textarea>
+                <p class="text-xs opacity-40 text-center py-2">Poznámka je dostupná v každém kroku formuláře.</p>
+            </div>
+        </section>
+        <!-- End - Poznámka -->
+
+        <!-- Pokračovat -->
+        <section>
+            <div class="container mx-auto px-5 my-5">
+                <div class="flex gap-2 justify-center">
+                    <button class="px-8 py-2 bg-teal-500 text-white rounded-xl hover:bg-teal-600 transition-all border-b-2 border-black">
+                        Pokračovat                           
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End - Pokračovat -->
+
+    </main>
+
+    <!-- Potřebujete poradit -->
+    <div class="hidden sm:block">
+        <button class="px-8 py-2 bg-slate-500 text-white rounded-xl hover:bg-slate-600 transition-all bottom-5 right-5 fixed">
+            Potřebujete poradit?                        
+        </button>
+    </div>
+    <!-- End - Potřebujete poradit -->
+
+    <!-- Vysvětlivka -->
+    <div class="w-screen h-screen flex-col flex gap-2 items-center justify-center fixed z-10 top-0 hidden">
+        <div class="flex gap-4 px-8 py-4 bg-white rounded-xl shadow-2xl items-center w-full sm:w-[430px]">
+            <span class="material-symbols-outlined text-yellow-400">
+                grade
+            </span>
+            <p class="font-medium">Již mám eshop na platformě Prestashop</p>
+        </div>
+        <div class="flex gap-4 px-8 py-4 bg-white rounded-xl shadow-2xl items-center w-full sm:w-[430px]">
+            <p class="font-normal text-sm text-justify">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
+            </p>
+        </div>
+        <button class="px-8 py-2 bg-slate-900 text-white rounded-xl hover:bg-slate-600 transition-all">
+            Zavřít vysvětlivku                     
+        </button>
+    </div>
+    <!-- End - Vysvětlivka -->
+
+    <!-- Backdrop -->
+    <div class="bg-black w-screen h-screen top-0 fixed opacity-60 z-60 hidden"></div>
+    <!-- End - Backdrop -->
+</body>
+</html>
